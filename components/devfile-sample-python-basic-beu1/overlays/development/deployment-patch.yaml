@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-beu1
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/ewinchel-tenant/my-app-1/devfile-sample-python-basic-beu1@sha256:83189e56ac16d0cf6c6e5cbf419c20f63d69b5f85a7ce0f3a00b790422c37a8e
+        name: my-python
+        resources: {}
+status: {}
