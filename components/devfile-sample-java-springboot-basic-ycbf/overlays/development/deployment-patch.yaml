@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-ycbf
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/ewinchel-tenant/my-app-1/devfile-sample-java-springboot-basic-ycbf@sha256:9cb261bb571df3a48d07dfef7358d9c76b0db0b414091d40092fd3c5cb27d84e
+        name: my-java-springboot
+        resources: {}
+status: {}
